@@ -41,7 +41,7 @@ while i <= len(sheet_range['A']):
     driver.find_element('xpath','//*[@id="mG61Hd"]/div[2]/div/div[3]/div[1]/div[1]/div/span/span').click()
     
     # Tunggu sampai form baru siap
-    time.sleep(1)
+    time.sleep(0.5)
     
     # Klik link untuk mengisi form lagi jika ada
     try:
@@ -50,7 +50,7 @@ while i <= len(sheet_range['A']):
         # Jika tidak ada, refresh halaman
         driver.get("https://docs.google.com/forms/d/e/1FAIpQLSeCCnU4_cu3CxXLgqavXO3FpvszBPgOAa1_Di-CI3pOTAGo1g/viewform")
     
-    time.sleep(1)
+    time.sleep(0.5)
     i += 1
 
 print("Telah selesai")
