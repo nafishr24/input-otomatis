@@ -39,15 +39,6 @@ except Exception as e:
 input_url = "https://example.com/input-form"  # Ganti dengan URL form input
 driver.get(input_url)
 
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from openpyxl import load_workbook
-import time
-
-# ... (bagian awal kode tetap sama sampai Langkah 4) ...
-
 # Langkah 5: Baca data Excel dan isi form
 wb = load_workbook(filename="Peringkat SKD.xlsx")
 sheet_range = wb['Sheet2']
